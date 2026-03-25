@@ -933,15 +933,23 @@ body.dark #footer-logo {
   .grid {
     grid-template-columns: 1fr;
   }
+  .hero-sub{
+    font-size: 0.86rem;
+  }
+  .hero-eyebrow {
+  font-size: 2rem;
+  }
 
   .hero-ctas {
     flex-direction: column;
+   
   }
 
   .btn-hero-primary,
   .btn-hero-ghost {
     text-align: center;
     justify-content: center;
+    max-width: 400px;
   }
 
   .hero-stats {
