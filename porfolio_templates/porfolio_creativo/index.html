@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Creativo — Tu Nombre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- CURSOR PERSONALIZADO -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <span class="logo-initials">TN</span>
+        <span class="logo-name">Tu Nombre</span>
+      </a>
+      <nav class="nav">
+        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#galeria" class="nav-link">Galería</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+      <button class="menu-btn" id="menu-btn" aria-label="Menú">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#sobre-mi" class="mobile-nav-link">Sobre mí</a>
+    <a href="#proyectos" class="mobile-nav-link">Proyectos</a>
+    <a href="#galeria" class="mobile-nav-link">Galería</a>
+    <a href="#skills" class="mobile-nav-link">Skills</a>
+    <a href="#contacto" class="mobile-nav-link">Contacto</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="grain"></div>
+      <div class="hero-circle c1"></div>
+      <div class="hero-circle c2"></div>
+      <div class="hero-circle c3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Diseñadora &amp; Fotógrafa</p>
+      <h1 class="hero-title reveal">
+        <span class="line">Creando</span>
+        <span class="line italic">experiencias</span>
+        <span class="line">visuales</span>
+      </h1>
+      <p class="hero-sub reveal">Diseño editorial, identidad visual y fotografía de autor.<br>Trabajo donde el concepto
+        y la estética se encuentran.</p>
+      <div class="hero-actions reveal">
+        <button class="btn-primary" id="btn-scroll">Ver proyectos</button>
+        <a href="#contacto" class="btn-ghost">Hablemos →</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-img-float">
+      <div class="float-img img1"></div>
+      <div class="float-img img2"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section class="about" id="sobre-mi">
+    <div class="about-inner">
+      <div class="about-img-wrap">
+        <div class="about-img"></div>
+        <div class="about-badge">
+          <span class="badge-num">5+</span>
+          <span class="badge-txt">años de experiencia</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-label reveal">01 — Sobre mí</p>
+        <h2 class="section-title reveal">Soy diseñadora<br><em>visual y digital</em></h2>
+        <p class="about-desc reveal">Combino diseño gráfico, fotografía y desarrollo frontend para crear piezas que
+          comunican con precisión y belleza. Me interesa el espacio entre arte y funcionalidad.</p>
+        <div class="about-stats reveal">
+          <div class="stat">
+            <span class="stat-num">48</span>
+            <span class="stat-label">Proyectos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">32</span>
+            <span class="stat-label">Clientes</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">12</span>
+            <span class="stat-label">Premios</span>
+          </div>
+        </div>
+        <a href="#contacto" class="btn-outline reveal">Descargar CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="projects" id="proyectos">
+    <div class="projects-header">
+      <p class="section-label reveal">02 — Proyectos</p>
+      <h2 class="section-title reveal">Trabajo seleccionado</h2>
+    </div>
+    <div class="projects-grid">
+
+      <article class="project-card large reveal">
+        <div class="project-img pi1">
+          <div class="project-overlay">
+            <span class="project-cat">Identidad Visual</span>
+            <h3 class="project-name">Maison Éclat</h3>
+            <p class="project-desc">Branding completo para marca de lujo. Tipografía personalizada, paleta cromática y
+              sistema de diseño editorial.</p>
+            <a href="#" class="project-link">Ver proyecto →</a>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span>2024</span>
+          <span>Branding · Print</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-img pi2">
+          <div class="project-overlay">
+            <span class="project-cat">Fotografía</span>
+            <h3 class="project-name">Silhouettes</h3>
+            <p class="project-desc">Serie fotográfica editorial publicada en revista internacional.</p>
+            <a href="#" class="project-link">Ver proyecto →</a>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span>2024</span>
+          <span>Fotografía · Editorial</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-img pi3">
+          <div class="project-overlay">
+            <span class="project-cat">Web Design</span>
+            <h3 class="project-name">Studio Nomi</h3>
+            <p class="project-desc">Portfolio web para estudio de arquitectura con animaciones personalizadas.</p>
+            <a href="#" class="project-link">Ver proyecto →</a>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span>2023</span>
+          <span>Web · Motion</span>
+        </div>
+      </article>
+
+      <article class="project-card large reveal">
+        <div class="project-img pi4">
+          <div class="project-overlay">
+            <span class="project-cat">Diseño Editorial</span>
+            <h3 class="project-name">Memoria Anual</h3>
+            <p class="project-desc">Diseño de publicación anual de 120 páginas. Dirección de arte, maquetación y
+              producción.</p>
+            <a href="#" class="project-link">Ver proyecto →</a>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span>2023</span>
+          <span>Editorial · Print</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="gallery" id="galeria">
+    <div class="gallery-header">
+      <p class="section-label reveal">03 — Galería</p>
+      <h2 class="section-title reveal">Visual <em>showcase</em></h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item gi1 tall reveal">
+        <div class="gallery-info">
+          <span>Retrato · 2024</span>
+          <p>Identidad</p>
+        </div>
+      </div>
+      <div class="gallery-item gi2 reveal">
+        <div class="gallery-info">
+          <span>Abstracto · 2024</span>
+          <p>Textura</p>
+        </div>
+      </div>
+      <div class="gallery-item gi3 reveal">
+        <div class="gallery-info">
+          <span>Editorial · 2023</span>
+          <p>Moda</p>
+        </div>
+      </div>
+      <div class="gallery-item gi4 wide reveal">
+        <div class="gallery-info">
+          <span>Paisaje · 2024</span>
+          <p>Naturaleza</p>
+        </div>
+      </div>
+      <div class="gallery-item gi5 reveal">
+        <div class="gallery-info">
+          <span>Arquitectura · 2023</span>
+          <p>Espacio</p>
+        </div>
+      </div>
+      <div class="gallery-item gi6 reveal">
+        <div class="gallery-info">
+          <span>Still life · 2024</span>
+          <p>Producto</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="skills-inner">
+      <div class="skills-left">
+        <p class="section-label reveal">04 — Habilidades</p>
+        <h2 class="section-title reveal">Qué sé <em>hacer</em></h2>
+        <p class="skills-desc reveal">Mi trabajo abarca desde la conceptualización hasta la entrega final, con dominio
+          de las herramientas más actuales del sector.</p>
+      </div>
+      <div class="skills-right">
+        <div class="skill-group reveal">
+          <p class="skill-group-title">Diseño</p>
+          <div class="skill-tags">
+            <span class="tag">Identidad Visual</span>
+            <span class="tag">Diseño Editorial</span>
+            <span class="tag">UI/UX</span>
+            <span class="tag">Motion Graphics</span>
+            <span class="tag">Illustrator</span>
+            <span class="tag">Figma</span>
+            <span class="tag">InDesign</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <p class="skill-group-title">Fotografía</p>
+          <div class="skill-tags">
+            <span class="tag">Retrato</span>
+            <span class="tag">Editorial</span>
+            <span class="tag">Still Life</span>
+            <span class="tag">Lightroom</span>
+            <span class="tag">Photoshop</span>
+            <span class="tag">Capture One</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <p class="skill-group-title">Desarrollo</p>
+          <div class="skill-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">GSAP</span>
+            <span class="tag">WordPress</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="services">
+    <div class="services-header">
+      <p class="section-label reveal">05 — Servicios</p>
+      <h2 class="section-title reveal">Cómo puedo <em>ayudarte</em></h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-item reveal">
+        <span class="service-num">01</span>
+        <h3 class="service-title">Identidad Visual</h3>
+        <p class="service-desc">Logo, sistema de diseño, paleta y tipografía. Una identidad coherente que comunica tu
+          esencia.</p>
+      </div>
+      <div class="service-item reveal">
+        <span class="service-num">02</span>
+        <h3 class="service-title">Fotografía Editorial</h3>
+        <p class="service-desc">Sesiones de producto, retrato y editorial. Imágenes con dirección de arte y retoque
+          profesional.</p>
+      </div>
+      <div class="service-item reveal">
+        <span class="service-num">03</span>
+        <h3 class="service-title">Diseño Web</h3>
+        <p class="service-desc">Portfolios, landings y webs corporativas con diseño a medida, responsivo y optimizado.
+        </p>
+      </div>
+      <div class="service-item reveal">
+        <span class="service-num">04</span>
+        <h3 class="service-title">Diseño Editorial</h3>
+        <p class="service-desc">Revistas, catálogos, memorias anuales y libros. Maquetación con criterio tipográfico.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <p class="section-label reveal">06 — Contacto</p>
+        <h2 class="contact-title reveal">¿Tienes un<br><em>proyecto en mente?</em></h2>
+        <p class="contact-sub reveal">Estoy disponible para proyectos freelance, colaboraciones y residencias creativas.
+        </p>
+        <div class="contact-links reveal">
+          <a href="mailto:correo@email.com" class="contact-link">correo@email.com</a>
+          <a href="#" class="contact-link">Instagram</a>
+          <a href="#" class="contact-link">Behance</a>
+          <a href="#" class="contact-link">LinkedIn</a>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-field">
+          <label for="email">Tu email</label>
+          <input type="email" id="email" placeholder="tu@email.com" required>
+        </div>
+        <div class="form-field">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" placeholder="Motivo del contacto">
+        </div>
+        <div class="form-field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" rows="4" placeholder="Cuéntame tu proyecto..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary full">Enviar mensaje →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">Tu Nombre</p>
+      <p class="footer-copy">© 2026 — Diseñado y desarrollado con intención por Mónica</p>
+      <div class="footer-links">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

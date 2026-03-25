@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Nombre — Sobre mí</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">Tu Nombre</a>
+      <nav class="nav">
+        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="#valores" class="nav-link">Valores</a>
+        <a href="#intereses" class="nav-link">Intereses</a>
+        <a href="#conecta" class="nav-link">Conecta</a>
+      </nav>
+      <div class="header-ctas">
+        <a href="/cv_templates/cv_moderno/index.html" class="btn-ghost-sm">Ver CV</a>
+        <a href="/porfolio_templates/porfolio_simple/index.html" class="btn-outline-sm">Portfolio →</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#valores">Valores</a>
+    <a href="#intereses">Intereses</a>
+    <a href="#conecta">Conecta</a>
+    <div class="mobile-ctas">
+      <a href="/cv_templates/cv_moderno/index.html" class="btn-ghost-sm">Ver CV</a>
+      <a href="/porfolio_templates/porfolio_simple/index.html" class="btn-outline-sm">Portfolio →</a>
+    </div>
+  </div>
+
+  <!-- HERO / PRESENTACIÓN -->
+  <section class="hero" id="sobre-mi">
+    <div class="hero-deco">
+      <div class="deco-ring r1"></div>
+      <div class="deco-ring r2"></div>
+      <div class="deco-blob"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-tag reveal">
+          <span class="tag-dot"></span>
+          Disponible para nuevos proyectos
+        </div>
+        <h1 class="hero-title reveal">
+          Hola, soy<br>
+          <em>Tu Nombre</em>
+        </h1>
+        <p class="hero-role reveal">Diseñadora · Desarrolladora · Creativa</p>
+        <p class="hero-bio reveal">
+          Soy [tu nombre], una profesional apasionada por [tu área de especialidad]. Llevo [X años] creando [qué creas] que conectan con las personas y generan impacto real.
+        </p>
+        <p class="hero-bio reveal">
+          Creo firmemente que [tu filosofía de trabajo o vida]. Cuando no estoy trabajando, me puedes encontrar [hobby o interés personal].
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#conecta" class="btn-primary">Conectemos →</a>
+          <a href="/cv_templates/cv_moderno/index.html" class="btn-outline">Descargar CV</a>
+        </div>
+        <div class="hero-redes reveal">
+          <a href="#" class="red-link" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="#" class="red-link" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a href="#" class="red-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Instagram
+          </a>
+          <a href="mailto:tu@email.com" class="red-link" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+      <div class="hero-right reveal">
+        <div class="photo-frame">
+          <div class="photo">
+            <img src="asset/pexels-daniel-dan-47825192-7611112.jpg" alt="foto perfil">
+          </div>
+          <div class="photo-badge">
+            <span class="badge-emoji"><i class="bi bi-stars"></i></span>
+            <span class="badge-text">+5 años<br>de experiencia</span>
+          </div>
+          <div class="photo-tag">
+            <span><i class="bi bi-geo-fill"></i> Madrid, España</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CIFRAS -->
+  <section class="cifras">
+    <div class="cifras-inner">
+      <div class="cifra reveal">
+        <span class="cifra-n">18+</span>
+        <span class="cifra-l">Proyectos completados</span>
+      </div>
+      <div class="cifra-sep"></div>
+      <div class="cifra reveal">
+        <span class="cifra-n">20</span>
+        <span class="cifra-l">Clientes felices</span>
+      </div>
+      <div class="cifra-sep"></div>
+      <div class="cifra reveal">
+        <span class="cifra-n">5+</span>
+        <span class="cifra-l">Años de experiencia</span>
+      </div>
+      <div class="cifra-sep"></div>
+      <div class="cifra reveal">
+        <span class="cifra-n">2</span>
+        <span class="cifra-l">Premios y reconocimientos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALORES -->
+  <section class="valores" id="valores">
+    <div class="valores-inner">
+      <div class="valores-head reveal">
+        <span class="section-tag">Cómo trabajo</span>
+        <h2 class="section-title">Mis <em>valores</em></h2>
+        <p class="section-sub">Principios que guían cada proyecto y cada decisión que tomo.</p>
+      </div>
+      <div class="valores-grid">
+
+        <div class="valor-card reveal">
+          <span class="valor-icon">◎</span>
+          <h3>Honestidad</h3>
+          <p>Comunico de forma clara y directa. Prefiero decir la verdad a tiempo que dar falsas expectativas.</p>
+        </div>
+
+        <div class="valor-card reveal">
+          <span class="valor-icon">◈</span>
+          <h3>Curiosidad</h3>
+          <p>Aprendo algo nuevo cada día. La mejor solución suele venir de explorar fuera de la zona de confort.</p>
+        </div>
+
+        <div class="valor-card reveal">
+          <span class="valor-icon">◉</span>
+          <h3>Cuidado por el detalle</h3>
+          <p>Los pequeños detalles son los que marcan la diferencia entre algo bueno y algo memorable.</p>
+        </div>
+
+        <div class="valor-card reveal">
+          <span class="valor-icon">⬡</span>
+          <h3>Colaboración</h3>
+          <p>Los mejores resultados nacen del trabajo conjunto. Escucho tanto como hablo, y aprendo de todos.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAYECTORIA -->
+  <section class="trayectoria">
+    <div class="tray-inner">
+      <div class="tray-head reveal">
+        <span class="section-tag">Mi camino</span>
+        <h2 class="section-title">Cómo llegué <em>hasta aquí</em></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-year">2024</div>
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <h3>Cargo actual · Empresa o freelance</h3>
+            <p>Descripción de lo que estás haciendo ahora. Tus responsabilidades y logros más relevantes.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-year">2022</div>
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <h3>Cargo anterior · Empresa</h3>
+            <p>Descripción del rol anterior. Qué aprendiste y cómo creciste profesionalmente en esta etapa.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-year">2019</div>
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <h3>Primer paso · Empresa o formación</h3>
+            <p>Dónde empezó todo. Tu primer trabajo, formación relevante o proyecto que marcó el inicio.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERESES -->
+  <section class="intereses" id="intereses">
+    <div class="intereses-inner">
+      <div class="intereses-head reveal">
+        <span class="section-tag">Fuera del trabajo</span>
+        <h2 class="section-title">Qué me <em>apasiona</em></h2>
+      </div>
+      <div class="intereses-grid">
+
+        <div class="interes reveal">
+          <span class="interes-emoji"><i class="bi bi-camera-fill"></i></span>
+          <h3>Fotografía</h3>
+          <p>Capturar momentos cotidianos que pasan desapercibidos. La fotografía analógica me enseñó a mirar más despacio.</p>
+        </div>
+
+        <div class="interes reveal">
+          <span class="interes-emoji"><i class="bi bi-book-half"></i></span>
+          <h3>Lectura</h3>
+          <p>Desde ensayo hasta ficción especulativa. Los libros son la forma más eficiente de vivir otras vidas.</p>
+        </div>
+
+        <div class="interes reveal">
+          <span class="interes-emoji"><i class="bi bi-music-note-beamed"></i></span>
+          <h3>Música</h3>
+          <p>Siempre con auriculares cuando trabajo. La música es el fondo perfecto para pensar en profundidad.</p>
+        </div>
+
+        <div class="interes reveal">
+          <span class="interes-emoji"><i class="bi bi-tree-fill"></i></span>
+          <h3>Naturaleza</h3>
+          <p>Las mejores ideas me vienen caminando. Necesito desconectar de pantallas regularmente para reconectar con lo importante.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONECTA / CONTACTO -->
+  <section class="conecta" id="conecta">
+    <div class="conecta-inner">
+      <div class="conecta-content reveal">
+        <span class="section-tag">Hablemos</span>
+        <h2 class="conecta-title">¿Nos <em>conocemos?</em></h2>
+        <p class="conecta-sub">Siempre estoy abierta a nuevas conversaciones, colaboraciones y proyectos que valgan la pena. Escríbeme sin compromiso.</p>
+        <div class="conecta-links">
+          <a href="mailto:tu@email.com" class="conecta-item">
+            <span class="ci-icon">✉</span>
+            <div>
+              <span class="ci-label">Email</span>
+              <span class="ci-val">tu@email.com</span>
+            </div>
+          </a>
+          <a href="#" class="conecta-item">
+            <span class="ci-icon">in</span>
+            <div>
+              <span class="ci-label">LinkedIn</span>
+              <span class="ci-val">linkedin.com/in/tuusuario</span>
+            </div>
+          </a>
+          <a href="#" class="conecta-item">
+            <span class="ci-icon">gh</span>
+            <div>
+              <span class="ci-label">GitHub</span>
+              <span class="ci-val">github.com/tuusuario</span>
+            </div>
+          </a>
+        </div>
+        <div class="conecta-btns">
+          <a href="/porfolio_templates/porfolio_simple/index.html" class="btn-primary">Ver mi portfolio →</a>
+          <a href="/cv_templates/cv_moderno/index.html" class="btn-outline">Descargar CV</a>
+        </div>
+      </div>
+      <div class="conecta-card reveal">
+        <div class="cc-top">
+          <div class="cc-avatar">
+            <img src="asset/pexels-daniel-dan-47825192-7611112.jpg" alt="foto perfil">
+          </div>
+          <div>
+            <span class="cc-name">Tu Nombre</span>
+            <span class="cc-role">Tu profesión · Tu ciudad</span>
+          </div>
+        </div>
+        <p class="cc-quote">"[Una frase que te defina: tu filosofía, lo que te mueve o cómo ves tu trabajo]"</p>
+        <div class="cc-tags">
+          <span>Diseño</span>
+          <span>Desarrollo</span>
+          <span>Creatividad</span>
+          <span>Estrategia</span>
+        </div>
+        <div class="cc-footer">
+          <span class="cc-status">
+            <span class="status-dot"></span>
+            Disponible para proyectos
+          </span>
+          <a href="mailto:tu@email.com" class="cc-btn">Escribir →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-name">Tu Nombre</p>
+      <p class="footer-copy">© 2026 · Hecho con cuidado por Mónica</p>
+      <div class="footer-links">
+        <a href="/cv_templates/cv_moderno/index.html">CV</a>
+        <a href="/porfolio_templates/porfolio_simple/index.html">Portfolio</a>
+        <a href="#conecta">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

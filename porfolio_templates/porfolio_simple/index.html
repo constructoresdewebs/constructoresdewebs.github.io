@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Simple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">Tu Nombre</a>
+      <nav class="nav">
+        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#skills">Skills</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hero-tag">Disponible para proyectos</p>
+      <h1 class="hero-title">
+        Hola, soy<br>
+        <span class="hero-name">Tu Nombre</span>
+      </h1>
+      <p class="hero-role">Desarrollador Web · Diseñador</p>
+      <p class="hero-desc">Creo experiencias digitales limpias, funcionales y bien diseñadas. Me importa el detalle, la usabilidad y que el resultado final hable por sí solo.</p>
+      <div class="hero-btns">
+        <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+        <a href="#contacto" class="btn-outline">Contactar</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img-frame">
+        <div class="hero-img"></div>
+      </div>
+      <div class="hero-chip chip1">HTML · CSS · JS</div>
+      <div class="hero-chip chip2">Diseño UI</div>
+      <div class="hero-chip chip3">Responsive</div>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section class="about" id="sobre-mi">
+    <div class="about-inner">
+      <div class="about-left">
+        <p class="section-tag" id="tag">01 — Sobre mí</p>
+        <h2 class="section-title">Un poco<br><em>sobre mí</em></h2>
+      </div>
+      <div class="about-right">
+        <p class="about-text">Soy [tu nombre], profesional en [tu área] con [X años] de experiencia. Me especializo en [tu especialidad] y disfruto crear soluciones que combinen estética y función.</p>
+        <p class="about-text">Actualmente [situación actual: disponible para trabajar / trabajando en / buscando oportunidades en].</p>
+        <div class="about-stats">
+          <div class="astat">
+            <span class="astat-n">12+</span>
+            <span class="astat-l">Proyectos</span>
+          </div>
+          <div class="astat">
+            <span class="astat-n">3+</span>
+            <span class="astat-l">Años</span>
+          </div>
+          <div class="astat">
+            <span class="astat-n">8+</span>
+            <span class="astat-l">Clientes</span>
+          </div>
+        </div>
+        <a href="#contacto" class="btn-primary">Trabajemos juntos →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="projects" id="proyectos">
+    <div class="section-head">
+      <p class="section-tag">02 — Proyectos</p>
+      <h2 class="section-title">Trabajo <em>seleccionado</em></h2>
+    </div>
+    <div class="projects-grid">
+
+      <article class="project-card featured">
+        <div class="project-img pimg1">
+          <div class="project-hover">
+            <span class="proj-tag">Diseño Web</span>
+            <h3>Nombre del proyecto</h3>
+            <p>Descripción breve: qué es, qué problema resuelve y cuál fue tu rol.</p>
+            <a href="#" class="proj-link">Ver proyecto →</a>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="proj-year">2024</span>
+          <span class="proj-cat">Web · UI</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-img pimg2">
+          <div class="project-hover">
+            <span class="proj-tag">Desarrollo</span>
+            <h3>Nombre del proyecto</h3>
+            <p>Descripción breve del proyecto y tecnologías usadas.</p>
+            <a href="#" class="proj-link">Ver proyecto →</a>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="proj-year">2024</span>
+          <span class="proj-cat">Frontend</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-img pimg3">
+          <div class="project-hover">
+            <span class="proj-tag">Branding</span>
+            <h3>Nombre del proyecto</h3>
+            <p>Descripción breve del proyecto y tu aportación.</p>
+            <a href="#" class="proj-link">Ver proyecto →</a>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="proj-year">2023</span>
+          <span class="proj-cat">Diseño</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-img pimg4">
+          <div class="project-hover">
+            <span class="proj-tag">App</span>
+            <h3>Nombre del proyecto</h3>
+            <p>Descripción breve del proyecto y resultado conseguido.</p>
+            <a href="#" class="proj-link">Ver proyecto →</a>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="proj-year">2023</span>
+          <span class="proj-cat">UI · UX</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="skills-inner">
+      <div class="skills-head">
+        <p class="section-tag" id="nom">03 — Habilidades</p>
+        <h2 class="section-title">Qué sé <em>hacer</em></h2>
+      </div>
+      <div class="skills-cols">
+
+        <div class="skill-col">
+          <h3 class="skill-col-title" id="nom">Desarrollo</h3>
+          <ul class="skill-list">
+            <li >HTML5 · CSS3</li>
+            <li>JavaScript</li>
+            <li>React / Vue</li>
+            <li>PHP · Laravel</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-col">
+          <h3 class="skill-col-title" id="nom">Diseño</h3>
+          <ul class="skill-list">
+            <li>UI / UX Design</li>
+            <li>Figma</li>
+            <li>Adobe XD</li>
+            <li>Illustrator</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+
+        <div class="skill-col">
+          <h3 class="skill-col-title" id="nom">Herramientas</h3>
+          <ul class="skill-list">
+            <li>Git · GitHub</li>
+            <li>VS Code</li>
+            <li>WordPress</li>
+            <li>Webpack · Vite</li>
+            <li>Notion</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section class="experience">
+    <div class="exp-inner">
+      <p class="section-tag" id="tag">04 — Experiencia</p>
+      <h2 class="section-title">Trayectoria <em>profesional</em></h2>
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-date">2023 — Hoy</div>
+          <div class="tl-body">
+            <h3 class="tl-role">Puesto · Empresa</h3>
+            <p class="tl-desc">Descripción del rol, responsabilidades principales y logros más relevantes.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">2021 — 2023</div>
+          <div class="tl-body">
+            <h3 class="tl-role">Puesto · Empresa</h3>
+            <p class="tl-desc">Descripción del rol y principales contribuciones al equipo o proyecto.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">2019 — 2021</div>
+          <div class="tl-body">
+            <h3 class="tl-role">Puesto · Empresa</h3>
+            <p class="tl-desc">Descripción del rol de entrada y aprendizajes clave durante este período.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <p class="section-tag" id="tag">05 — Contacto</p>
+        <h2 class="contact-title">¿Hablamos<br>sobre tu <em>proyecto?</em></h2>
+        <p class="contact-sub">Estoy disponible para proyectos freelance y oportunidades laborales. Escríbeme y te respondo en menos de 24h.</p>
+        <div class="contact-data">
+          <a href="mailto:correo@email.com" class="contact-item">
+            <span class="ci-label">Email</span>
+            <span class="ci-val">correo@email.com</span>
+          </a>
+          <a href="#" class="contact-item">
+            <span class="ci-label">LinkedIn</span>
+            <span class="ci-val">linkedin.com/in/tuusuario</span>
+          </a>
+          <a href="#" class="contact-item">
+            <span class="ci-label">GitHub</span>
+            <span class="ci-val">github.com/tuusuario</span>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Tu nombre">
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="tu@email.com">
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" placeholder="¿En qué puedo ayudarte?">
+        </div>
+        <div class="form-field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" rows="4" placeholder="Cuéntame tu proyecto..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary full">Enviar mensaje →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-name">Tu Nombre</p>
+      <p class="footer-copy">© 2026 · Diseñado y desarrollado con cuidado por Mónica</p>
+      <div class="footer-links">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

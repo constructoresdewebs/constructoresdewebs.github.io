@@ -1,0 +1,122 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+transition:0.3s;
+}
+
+body.light {
+  background: radial-gradient(circle at center, #ffffff 0%, #e6e6e6 40%, #c7c7c7 100%);
+  color: #333;
+}
+
+body.dark {
+  background: linear-gradient(to bottom, #3a3a3a, #2b2b2b, #1e1e1e);
+}
+
+body.light .card {
+  background: white;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+body.dark .card {
+  background: #3a3a3a;
+  box-shadow: 0 6px 18px rgba(255,255,255,0.12);
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:10px;
+}
+
+header{
+text-align:center;
+}
+
+header h1{
+font-size:40px;
+}
+
+header p{
+color:#777;
+margin:10px 0;
+}
+
+.buttons button{
+margin:10px;
+padding:10px 15px;
+border:none;
+background:#8953a9;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+.card{
+background:white;
+margin:20px 0;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h2{
+margin-bottom:15px;
+color:#8953a9;
+}
+
+.item ul {
+  margin-top: 6px;     
+  padding-left: 20px;  
+}
+
+.item{
+margin-bottom:15px;
+}
+
+.item span{
+font-size:14px;
+color:#b4b4b4;
+font-weight: bolder;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.skills span{
+background:#ac81c6;
+color:#020202;
+padding:5px 10px;
+border-radius:20px;
+font-size:14px;
+margin-bottom: 15px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+color:#777;
+}
+
+/* MODO OSCURO */
+
+.dark{
+background:#1e1e1e;
+color:white;
+}
+
+.dark .card{
+background:#3a3a3a ;
+}
+
+.dark .skills span{
+background:#c098d6;
+}

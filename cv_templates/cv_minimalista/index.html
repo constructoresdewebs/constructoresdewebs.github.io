@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>CV - Minimalista</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <div>
+        <h1>Nombre Apellido</h1>
+        <p class="role">Rol profesional · Especialidad</p>
+        <p class="tagline">Ayudo a empresas a [resultado] mediante [habilidad clave].</p>
+      </div>
+      <nav class="nav">
+        <a href="#about">Sobre mí</a>
+        <a href="#experience">Experiencia</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#education">Formación</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>Sobre mí</h2>
+      <p>
+        Profesional en <strong>[tu área]</strong> con experiencia en
+        <strong>[competencias clave]</strong>. Me especializo en
+        <strong>[fortalezas]</strong> y disfruto trabajar en
+        <strong>[tipo de proyectos]</strong>.
+      </p>
+    </section>
+
+    <section id="experience" class="card">
+      <div class="section-header">
+        <h2>Experiencia</h2>
+        <button class="toggle-btn" data-target="experience-list">Ocultar</button>
+      </div>
+      <div id="experience-list">
+        <article class="item">
+          <div class="item-header">
+            <h3>Puesto — Empresa</h3>
+            <span class="item-date">Fecha inicio – Fecha fin</span>
+          </div>
+          <p>Breve descripción del rol y contexto.</p>
+          <ul>
+            <li>Logro o responsabilidad con impacto medible.</li>
+            <li>Proyecto relevante y tecnologías utilizadas.</li>
+            <li>Resultado concreto (idealmente con números).</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="item-header">
+            <h3>Puesto — Empresa</h3>
+            <span class="item-date">Fecha inicio – Fecha fin</span>
+          </div>
+          <p>Breve descripción del rol y contexto.</p>
+          <ul>
+            <li>Responsabilidad clave.</li>
+            <li>Mejora o logro.</li>
+            <li>Resultado o aprendizaje.</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="item-header">
+            <h3>Puesto — Empresa</h3>
+            <span class="item-date">Fecha inicio – Fecha fin</span>
+          </div>
+          <p>Breve descripción del rol y contexto.</p>
+          <ul>
+            <li>Responsabilidad clave.</li>
+            <li>Mejora o logro.</li>
+            <li>Resultado o aprendizaje.</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="item-header">
+            <h3>Puesto — Empresa</h3>
+            <span class="item-date">Fecha inicio – Fecha fin</span>
+          </div>
+          <p>Breve descripción del rol y contexto.</p>
+          <ul>
+            <li>Logro o responsabilidad con impacto medible.</li>
+            <li>Proyecto relevante y tecnologías utilizadas.</li>
+            <li>Resultado concreto (idealmente con números).</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Técnicas</h3>
+          <ul>
+            <li>Lenguaje / Framework</li>
+            <li>Herramienta / Software</li>
+            <li>Base de datos</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Blandas</h3>
+          <ul>
+            <li>Comunicación</li>
+            <li>Trabajo en equipo</li>
+            <li>Gestión del tiempo</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Idiomas</h3>
+          <ul>
+            <li>Español — Nativo</li>
+            <li>Inglés — B2/C1</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Proyectos</h2>
+      <div class="projects-grid">
+        <article class="item">
+          <h3>Nombre del proyecto</h3>
+          <p>
+            Breve descripción del objetivo, tu rol y el resultado.
+          </p>
+          <a href="proyecto.html?id=1" target="_blank" class="link">Ver proyecto</a>
+        </article>
+        <article class="item">
+          <h3>Nombre del proyecto</h3>
+          <p>
+            Breve descripción del objetivo, tu rol y el resultado.
+          </p>
+          <a href="proyecto.html?id=2" target="_blank" class="link">Ver proyecto</a>
+        </article>
+        
+        <article class="item">
+          <h3>Nombre del proyecto</h3>
+          <p>
+            Breve descripción del objetivo, tu rol y el resultado.
+          </p>
+          <a href="proyecto.html?id=3" target="_blank" class="link">Ver proyecto</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="card">
+      <h2>Formación</h2>
+      <article class="item">
+        <div class="item-header">
+          <h3>Título — Institución</h3>
+          <span class="item-date">Año</span>
+        </div>
+        <p>Especialización o proyecto relevante.</p>
+      </article>
+        <article class="item">
+        <div class="item-header">
+          <h3>Título — Institución</h3>
+          <span class="item-date">Año</span>
+        </div>
+        <p>Especialización o proyecto relevante.</p>
+      </article>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contacto</h2>
+      <ul class="contact-list">
+        <li><strong>Email:</strong> tuemail@ejemplo.com</li>
+        <li><strong>Teléfono:</strong> +34 600 000 000</li>
+        <li><strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/usuario</a></li>
+        <li><strong>GitHub / Portfolio:</strong> <a href="#" target="_blank">tusitio.com</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Nombre Apellido · CV Online</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
