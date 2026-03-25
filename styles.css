@@ -995,4 +995,10 @@ body.dark #footer-logo {
   .stat-divider {
     margin-right: 20px;
   }
+  .footer-copy {
+    display: flex;
+    flex-direction: column; 
+    text-align: center;     
+    gap: 4px;             
+  }
 }
