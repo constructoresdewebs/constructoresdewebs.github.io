@@ -953,21 +953,33 @@ body.dark #footer-logo {
   .grid {
     grid-template-columns: 1fr;
   }
+   .logo-container {
+    max-width: 60%;
+  }
+  .header-inner {
+    padding: 0 12px;
+  }
+
+  .site-name {
+    font-size: 0.9rem;
+    line-height: 1.1;
+  }
+
+  .header-actions {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+
+  #modo-toggle,
+  .hamburger {
+    flex-shrink: 0;
+  }
   .hero {
     min-height: 100vh;
     margin-top: 0;
   }
-  .hero-bg {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-  }
-  .hero-bg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
+  
   .hero-sub {
     font-size: 0.86rem;
   }
