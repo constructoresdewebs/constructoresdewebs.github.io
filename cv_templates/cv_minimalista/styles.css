@@ -279,6 +279,10 @@ main {
   font-size: 0.8rem;
 }
 
+.tituloProyecto{
+  margin-bottom: 38px;
+}
+
 /* Responsive */
 
 @media (max-width: 720px) {
