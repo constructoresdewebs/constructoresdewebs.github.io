@@ -63,6 +63,13 @@ document.addEventListener('click', (e) => {
     navDrawer.classList.remove('open');
   }
 });
+/*******************/
+// ===========================
+// RENDER SECCIONES Y TARJETAS
+// Llama a la funcion de cards.js (que usa los datos de data.js)
+// ===========================
+renderSecciones();
+/*******************/
 
 // ===========================
 // ANIMACIÓN SCROLL REVEAL

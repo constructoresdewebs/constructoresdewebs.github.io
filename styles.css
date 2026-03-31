@@ -480,10 +480,20 @@ header.scrolled {
 /* ===========================
    SECTIONS
 =========================== */
-#ia {
-  margin-bottom: 42px;
+.aviso-ia {
   text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  font-style: italic;
+  font-size: 1.1rem;
 }
+.aviso-ia i {
+  font-size: 1.1rem;
+  color: var(--accent-2);
+  flex-shrink: 0;
+}
+
 .plantilla-section {
   padding: 60px 32px;
   margin: 0 auto;
@@ -521,20 +531,26 @@ header.scrolled {
   user-select: none;
 }
 
-.num-section {
-  color: var(--bg-alt);
+#portfolio .section-tag,
+#herramientas .section-tag,
+#portfolio .section-header h2,
+#herramientas .section-header h2,
+#portfolio .section-header p,
+#herramientas .section-header p {
+  color: var(--bg); 
 }
 
-#section-title {
-  color: var(--bg-alt);
-}
-
-#description {
-  color: var(--bg-alt);
-}
-
-#descripcion {
-  color: var(--bg-desc);
+#cv .section-tag,
+#landing .section-tag,
+#sobre-mi .section-tag,
+#cv .section-header h2,
+#landing .section-header h2,
+#sobre-mi .section-header h2,
+#cv .section-header p,
+#landing .section-header p,
+#sobre-mi .section-header p {
+  color: var(--text);
+  
 }
 
 .section-header h2 {
@@ -544,11 +560,12 @@ header.scrolled {
 }
 
 .section-header p {
-  color: #353e43;
+  color: var(--text-muted);
   font-size: 0.95rem;
   margin-top: 6px;
   font-weight: 300;
 }
+
 #cv,
 #landing,
 #sobre-mi {
@@ -737,6 +754,15 @@ header.scrolled {
   margin-top: auto;
 }
 
+.pdf-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  background: rgba(255,255,255,0.2);
+  padding: 1px 5px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
 /* ===========================
    BUTTONS
 =========================== */
@@ -790,7 +816,7 @@ header.scrolled {
 
 .btn-disabled {
   background: var(--surface-2);
-  color: var(--text-muted);
+  color: var(--text);
   cursor: not-allowed;
   border: 1px solid var(--border);
   pointer-events: none;
