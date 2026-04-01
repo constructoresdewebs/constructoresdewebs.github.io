@@ -104,11 +104,20 @@ const secciones = [
     claseSeccion: 'plantilla-section alt-section',
     plantillas: [
       {
+        badge: 'Nuevo Checklist',
+        imagen: 'assets/img/previews/checklist.webp',
+        alt: 'Checklist de Búsqueda',
+        titulo: 'Checklist de Búsqueda',
+        descripcion: 'Plantilla interactiva con los pasos esenciales para organizar tu búsqueda de empleo.',
+        urlVer: 'checklist-empleo/index.html',
+        urlInstrucciones: 'checklist-empleo/Instrucciones-checklist-empleo.pdf',
+      },
+      /*{
         proximamente: true,
         icono: 'bi-file-earmark-check',
         titulo: 'Checklist de Búsqueda',
         descripcion: 'Plantilla interactiva con los pasos esenciales para organizar tu búsqueda de empleo.',
-      },
+      },*/
       {
         proximamente: true,
         icono: 'bi-envelope-paper',

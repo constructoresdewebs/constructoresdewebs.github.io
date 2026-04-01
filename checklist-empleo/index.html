@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist de Búsqueda de Empleo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <span class="brand-icon">✦</span>
+        <span class="brand-name">Checklist de Empleo</span>
+      </div>
+      <div class="header-progress">
+        <span id="progress-text">0 de 40 completados</span>
+        <div class="progress-bar-mini">
+          <div class="progress-fill-mini" id="progress-fill-mini"></div>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="btn-reset" id="btn-reset" title="Reiniciar todo">↺ Reiniciar</button>
+        <button class="btn-export" id="btn-export">⬇ Exportar PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Herramienta interactiva
+        </div>
+        <h1 class="hero-title">Organiza tu<br><em>búsqueda de empleo</em></h1>
+        <p class="hero-sub">40 pasos esenciales organizados en 5 fases. Marca cada tarea completada y lleva el control de tu proceso desde el perfil hasta la oferta.</p>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat">
+          <span class="hstat-n">5</span>
+          <span class="hstat-l">Fases</span>
+        </div>
+        <div class="hstat-sep"></div>
+        <div class="hstat">
+          <span class="hstat-n">40</span>
+          <span class="hstat-l">Pasos</span>
+        </div>
+        <div class="hstat-sep"></div>
+        <div class="hstat">
+          <span class="hstat-n" id="done-count">0</span>
+          <span class="hstat-l">Completados</span>
+        </div>
+      </div>
+    </div>
+    <!-- PROGRESS GLOBAL -->
+    <div class="global-progress">
+      <div class="gp-inner">
+        <div class="gp-bar">
+          <div class="gp-fill" id="gp-fill"></div>
+        </div>
+        <span class="gp-pct" id="gp-pct">0%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="main-inner">
+
+      <!-- FASE 1 -->
+      <section class="fase" data-fase="1">
+        <div class="fase-header">
+          <div class="fase-meta">
+            <span class="fase-num">01</span>
+            <div>
+              <h2 class="fase-title">Prepara tu perfil profesional</h2>
+              <p class="fase-sub">La base de todo: CV, LinkedIn y portfolio listos antes de enviar nada.</p>
+            </div>
+          </div>
+          <div class="fase-progress">
+            <svg class="fase-ring" viewBox="0 0 36 36">
+              <circle class="ring-bg" cx="18" cy="18" r="15.9"/>
+              <circle class="ring-fill" cx="18" cy="18" r="15.9" data-fase="1"/>
+            </svg>
+            <span class="fase-pct" data-fase="1">0%</span>
+          </div>
+        </div>
+        <div class="tasks">
+
+          <label class="task">
+            <input type="checkbox" data-fase="1">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Actualiza tu CV con tus últimas experiencias y logros</span>
+              <span class="task-tip">Incluye resultados medibles: "Aumenté X un Y%". Máximo 2 páginas.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="1">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Adapta el CV al sector o tipo de empresa que buscas</span>
+              <span class="task-tip">No existe el CV universal. Ajusta las palabras clave según cada oferta.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="1">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Revisa ortografía y formato del CV con otra persona</span>
+              <span class="task-tip">Un error tipográfico en el CV puede costar una entrevista.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="1">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Actualiza tu perfil de LinkedIn con foto profesional</span>
+              <span class="task-tip">Los perfiles con foto reciben 21 veces más visitas. Fondo neutro, buena luz.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="1">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Escribe un titular de LinkedIn que describa tu valor</span>
+              <span class="task-tip">No pongas solo tu cargo. Ej: "Diseñadora UX · Creo interfaces que convierten".</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="1">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Completa la sección "Acerca de" de LinkedIn</span>
+              <span class="task-tip">Escribe en primera persona. Qué haces, para quién y qué resultados consigues.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="1">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Activa "Disponible para trabajar" en LinkedIn</span>
+              <span class="task-tip">Puedes hacerlo de forma visible o solo para reclutadores.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="1">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Crea o actualiza tu portfolio online con proyectos recientes</span>
+              <span class="task-tip">Incluye el contexto, tu rol y el resultado de cada proyecto.</span>
+            </div>
+          </label>
+
+        </div>
+      </section>
+
+      <!-- FASE 2 -->
+      <section class="fase" data-fase="2">
+        <div class="fase-header">
+          <div class="fase-meta">
+            <span class="fase-num">02</span>
+            <div>
+              <h2 class="fase-title">Define tu estrategia</h2>
+              <p class="fase-sub">Saber qué buscas y dónde buscarlo multiplica tus posibilidades.</p>
+            </div>
+          </div>
+          <div class="fase-progress">
+            <svg class="fase-ring" viewBox="0 0 36 36">
+              <circle class="ring-bg" cx="18" cy="18" r="15.9"/>
+              <circle class="ring-fill" cx="18" cy="18" r="15.9" data-fase="2"/>
+            </svg>
+            <span class="fase-pct" data-fase="2">0%</span>
+          </div>
+        </div>
+        <div class="tasks">
+
+          <label class="task">
+            <input type="checkbox" data-fase="2">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Define el tipo de empresa y sector que te interesa</span>
+              <span class="task-tip">Startup, corporación, agencia, freelance. Cada entorno exige cosas distintas.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="2">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Establece tus condiciones mínimas: salario, modalidad, ubicación</span>
+              <span class="task-tip">Conocer tu "mínimo aceptable" evita perder tiempo con ofertas que no encajan.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="2">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Haz una lista de 20 empresas donde te gustaría trabajar</span>
+              <span class="task-tip">El 70% de los puestos se cubren sin publicarse. Las candidaturas directas funcionan.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="2">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Investiga el rango salarial de tu perfil en tu mercado</span>
+              <span class="task-tip">Consulta Glassdoor, LinkedIn Salaries o Infojobs para tener referencia.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="2">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Crea alertas de empleo en LinkedIn, Infojobs y Google</span>
+              <span class="task-tip">Google Jobs: busca tu cargo y activa la alerta en los resultados.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="2">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Identifica las palabras clave de las ofertas de tu sector</span>
+              <span class="task-tip">Úsalas en tu CV y LinkedIn para que los ATS (filtros automáticos) te encuentren.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="2">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Prepara una plantilla de carta de presentación adaptable</span>
+              <span class="task-tip">3 párrafos: por qué ellos, qué aportas, CTA. Personaliza el primero para cada empresa.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="2">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Crea una hoja de seguimiento de candidaturas</span>
+              <span class="task-tip">Empresa, fecha, estado, contacto, próximos pasos. Notion o una hoja de cálculo van bien.</span>
+            </div>
+          </label>
+
+        </div>
+      </section>
+
+      <!-- FASE 3 -->
+      <section class="fase" data-fase="3">
+        <div class="fase-header">
+          <div class="fase-meta">
+            <span class="fase-num">03</span>
+            <div>
+              <h2 class="fase-title">Activa tu red</h2>
+              <p class="fase-sub">El networking no es incómodo si lo haces de forma auténtica y con valor.</p>
+            </div>
+          </div>
+          <div class="fase-progress">
+            <svg class="fase-ring" viewBox="0 0 36 36">
+              <circle class="ring-bg" cx="18" cy="18" r="15.9"/>
+              <circle class="ring-fill" cx="18" cy="18" r="15.9" data-fase="3"/>
+            </svg>
+            <span class="fase-pct" data-fase="3">0%</span>
+          </div>
+        </div>
+        <div class="tasks">
+
+          <label class="task">
+            <input type="checkbox" data-fase="3">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Avisa a tus contactos cercanos que estás buscando empleo</span>
+              <span class="task-tip">El 85% de los empleos se consiguen por networking. Empieza por quienes ya te conocen.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="3">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Conecta en LinkedIn con personas del sector que te interesa</span>
+              <span class="task-tip">Añade siempre una nota personalizada. "Vi tu post sobre X y me pareció muy interesante".</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="3">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Escribe o comenta en LinkedIn sobre tu área de especialidad</span>
+              <span class="task-tip">Un post semanal sobre tu campo te posiciona como experto y atrae reclutadores.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="3">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Solicita a 3 contactos que te den una recomendación en LinkedIn</span>
+              <span class="task-tip">Las recomendaciones de personas reales valen mucho más que las habilidades endorsadas.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="3">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Asiste a un evento, meetup o comunidad online de tu sector</span>
+              <span class="task-tip">Meetup, Eventbrite y las comunidades de Discord o Slack de tu industria.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="3">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Identifica a 5 reclutadores de tu sector en LinkedIn y conéctate</span>
+              <span class="task-tip">Busca "recruiter + [tu sector]" y conecta con nota. No pidas trabajo directamente.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="3">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Haz una candidatura espontánea a 3 empresas de tu lista</span>
+              <span class="task-tip">Dirígete al responsable de área, no solo a RRHH. Personaliza el mensaje.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="3">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Pide una "coffee chat" informativa a alguien de una empresa objetivo</span>
+              <span class="task-tip">No pidas trabajo. Pide consejo: "¿Cómo es trabajar en X? ¿Qué valoran más?".</span>
+            </div>
+          </label>
+
+        </div>
+      </section>
+
+      <!-- FASE 4 -->
+      <section class="fase" data-fase="4">
+        <div class="fase-header">
+          <div class="fase-meta">
+            <span class="fase-num">04</span>
+            <div>
+              <h2 class="fase-title">Prepara las entrevistas</h2>
+              <p class="fase-sub">La entrevista se gana antes de entrar. La preparación marca la diferencia.</p>
+            </div>
+          </div>
+          <div class="fase-progress">
+            <svg class="fase-ring" viewBox="0 0 36 36">
+              <circle class="ring-bg" cx="18" cy="18" r="15.9"/>
+              <circle class="ring-fill" cx="18" cy="18" r="15.9" data-fase="4"/>
+            </svg>
+            <span class="fase-pct" data-fase="4">0%</span>
+          </div>
+        </div>
+        <div class="tasks">
+
+          <label class="task">
+            <input type="checkbox" data-fase="4">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Aprende a contar tu historia profesional en 2 minutos</span>
+              <span class="task-tip">Método STAR: Situación, Tarea, Acción, Resultado. Practica en voz alta.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="4">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Prepara respuestas a las 10 preguntas más habituales</span>
+              <span class="task-tip">"¿Cuál es tu mayor debilidad?", "¿Por qué quieres trabajar aquí?", "¿Dónde te ves en 5 años?"</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="4">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Investiga a fondo cada empresa antes de la entrevista</span>
+              <span class="task-tip">Productos, cultura, noticias recientes, valores, competidores. Muestra que has hecho los deberes.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="4">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Prepara 5 preguntas inteligentes para hacerles a ellos</span>
+              <span class="task-tip">"¿Cuál es el mayor reto del equipo ahora mismo?" demuestra interés real y pensamiento estratégico.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="4">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Practica una entrevista simulada con alguien de confianza</span>
+              <span class="task-tip">O grábate en vídeo. El lenguaje no verbal representa el 55% del impacto.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="4">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Prepara tu discurso de salario con datos de mercado</span>
+              <span class="task-tip">Da un rango, no un número fijo. Empieza por el techo de tu rango objetivo.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="4">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Confirma la logística: plataforma, hora, persona de contacto</span>
+              <span class="task-tip">Si es presencial, calcula el tiempo de desplazamiento y llega 10 minutos antes.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="4">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Envía un email de agradecimiento tras cada entrevista</span>
+              <span class="task-tip">Dentro de las 24 horas. Menciona algo específico de la conversación. El 90% no lo hace.</span>
+            </div>
+          </label>
+
+        </div>
+      </section>
+
+      <!-- FASE 5 -->
+      <section class="fase" data-fase="5">
+        <div class="fase-header">
+          <div class="fase-meta">
+            <span class="fase-num">05</span>
+            <div>
+              <h2 class="fase-title">Cierra y cuídate</h2>
+              <p class="fase-sub">Gestiona las ofertas con cabeza y mantén tu energía durante el proceso.</p>
+            </div>
+          </div>
+          <div class="fase-progress">
+            <svg class="fase-ring" viewBox="0 0 36 36">
+              <circle class="ring-bg" cx="18" cy="18" r="15.9"/>
+              <circle class="ring-fill" cx="18" cy="18" r="15.9" data-fase="5"/>
+            </svg>
+            <span class="fase-pct" data-fase="5">0%</span>
+          </div>
+        </div>
+        <div class="tasks">
+
+          <label class="task">
+            <input type="checkbox" data-fase="5">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Haz seguimiento a candidaturas sin respuesta pasada una semana</span>
+              <span class="task-tip">Un mensaje breve y directo: "Escribo para confirmar si han tenido oportunidad de revisar mi candidatura".</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="5">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Analiza cada rechazo para extraer aprendizajes concretos</span>
+              <span class="task-tip">Si te dan feedback, úsalo. Si no, pregunta educadamente. Cada "no" te acerca más al "sí".</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="5">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Lee y entiende bien el contrato antes de firmarlo</span>
+              <span class="task-tip">Tipo de contrato, salario bruto vs neto, beneficios, cláusulas de no competencia.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="5">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Negocia si la oferta está por debajo de tus expectativas</span>
+              <span class="task-tip">El 70% de las ofertas son negociables. Solo el 37% de los candidatos lo intenta.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="5">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Establece una rutina diaria de búsqueda con horarios fijos</span>
+              <span class="task-tip">Trata la búsqueda como un trabajo: mañanas para candidaturas, tardes para networking.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="5">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Limita el tiempo diario de búsqueda para evitar el agotamiento</span>
+              <span class="task-tip">3-4 horas enfocadas son más efectivas que 8 horas de baja calidad.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="5">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Celebra cada hito: primera entrevista, segunda ronda, oferta</span>
+              <span class="task-tip">El proceso puede ser largo. Reconocer el progreso mantiene la motivación alta.</span>
+            </div>
+          </label>
+
+          <label class="task">
+            <input type="checkbox" data-fase="5">
+            <span class="task-check"></span>
+            <div class="task-content">
+              <span class="task-title">Cuida tu energía: ejercicio, sueño y desconexión regular</span>
+              <span class="task-tip">Una persona descansada entrevista mejor. La búsqueda es una maratón, no un sprint.</span>
+            </div>
+          </label>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- MODAL COMPLETADO -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+      <div class="modal-icon">🎉</div>
+      <h2 class="modal-title">¡Lista completada!</h2>
+      <p class="modal-text">Has completado los 40 pasos de tu checklist de búsqueda de empleo. Estás más que preparado/a.</p>
+      <button class="btn-primary modal-btn" id="modal-close">¡A por ello! →</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-copy">Checklist de Búsqueda de Empleo · Constructores de Webs · 2026</p>
+      <p class="footer-note">Tu progreso se guarda automáticamente en este navegador.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
